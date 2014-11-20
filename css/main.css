@@ -190,11 +190,23 @@ body
 span.clear { clear: left; display: block; }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1000px) {
 
     .square
     {
         font-size: 75px;
+    }
+    .info
+    {
+        padding: 30px 0px;
+    }
+    .player-section
+    {
+      font-size: 30px;
+    }
+    .game-info
+    {
+      font-size: 25px;
     }
 
 }
@@ -205,21 +217,33 @@ span.clear { clear: left; display: block; }
     {
         font-size: 95px;
     }
+    .info
+    {
+        padding: 10px 0px;
+    }
 
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1240px)  {
 
     .square
     {
         font-size: 125px;
     }
+    .info
+    {
+        padding: 10px 0px;
+    }
 
 }
-@media only screen and (min-width: 1590px) {
+@media only screen and (min-width: 1590px){
 
     .square
     {
         font-size: 145px;
+    }
+    .info
+    {
+        padding: 2%;
     }
 
 }
@@ -238,14 +262,6 @@ span.clear { clear: left; display: block; }
         font-size: 230px;
     }
 
-}
-
-@media only screen and (min-height: 800px) {
-
-    .info
-    {
-        padding: 4%;
-    }
 }
 /* ==========================================================================
    Helper classes
