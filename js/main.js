@@ -43,12 +43,10 @@
                                  initWinner(turn, array);
                                  restartGame();
 
-                                 return true;
+                                 return false;
                              } else if (X.length + O.length == 9) {
                                  winner = true;
                                  initDraw();
-
-                                 return true;
                              }
                          });
                      }
@@ -86,7 +84,7 @@
 
                  window[turn + "_score"] ++;
                  $("#" + turn + "_score").html(window[turn + "_score"]);
-                 $(".game-info").html("<button class='btn'> Winner - <b>" + turn + "</b>, Play again </button>");
+                 $(".game-info").html("<button class='btn'> Winner - <b>" + turn + "</b> ! Play again </button>");
              }
 
              function initDraw() {
